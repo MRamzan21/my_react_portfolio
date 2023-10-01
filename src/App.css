@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Roboto Condensed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.banner {
+   display: flex;
+   background-color: hwb(204 5% 85%); 
+   color: #fff; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-column {
+   flex: 1;
+   text-align: center;
+   
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content-column {
+   flex: 1;
+   padding: 100px; /* Adjust padding as needed */
+   margin: auto 0;
 }
 
-.App-link {
-  color: #61dafb;
+.profile-img {
+   
+   border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+   text-align: left;
+}
+
+.content h1 {
+   font-size: 78px;
+   margin-bottom: 9px;
+   margin-top: -25px;
+   font-weight: bolder;
+}
+
+.content p {
+   font-size: 25px;
+   letter-spacing: 1px;
+}
+.content i{
+   text-align: center;
+   border: 1px solid;
+   padding: 10px;
+   font-size: 25px;
+   width: 28px;
+   height: 28px;
+   color: white;
+   box-shadow: none;
+   border-radius: 50px;
+
+}
+.content i:hover{
+   background: white;
+   color: #0d1c26;
+}
+
+/*********About Me section **********/
+
+
+.about-me {
+   display: flex;
+   background-color: #f2f2f2; 
+   padding: 50px;
+}
+
+.about-me-image {
+   flex: 1;
+   text-align: center;
+}
+.profile-img{
+   width: 300px;
+}
+
+.about-me-content {
+   flex: 1;
+   text-align: left;
+   padding-left: 20px;
+}
+.btn {
+   background-color: #ff5733; 
+   color: #fff;
+   padding: 10px 20px;
+   border: none;
+   text-transform: uppercase;
+   border-radius: 5px;
+   font-weight: bold;
+   text-decoration: none;
+   margin-top: 20px;
+   display: inline-block;
+}
+
+/*********skill section **********/
+
+.skills {
+   background-color: hwb(204 5% 85%);
+   color: #fff; 
+   padding: 50px;
+   text-align: center;
+}
+
+.skills h2 {
+   font-size: 36px;
+   margin-bottom: 20px;
+}
+
+.image-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.image-box {
+   flex: 1;
+   max-width: calc(25% - 20px); 
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   padding: 10px;
+   margin: 10px;
+   box-sizing: border-box;
+   text-align: center;
+}
+
+.image-box img {
+   width: 150px;
+   height: auto;
+   display: block;
+   margin: 0 auto; 
+}
+
+.image-box h3 {
+   font-size: 18px;
+   margin-top: 10px;
+}
+
+.image-box p {
+   font-size: 14px;
+}
+
+/*********Contact  section **********/
+.contact-info {
+    padding: 25px;
+   text-align: center;
+}
+
+.contact-info h2 {
+   font-size: 24px;
+   margin-bottom: 10px;
+}
+
+.contact-info p {
+   display: inline-block;
+   font-size: 18px;
+   margin: 0 20px; 
+}
+co
+.contact-info a{
+   text-decoration: none;
+   font-size: 22px;
+   padding: 10px;
+   color: #0d1c26;
+}
+.footer-icon{
+   color: #0d1c26;
+   font-size: 20px;
+   padding: 5px;
+}
+.footer p{
+   text-align: center;
 }
